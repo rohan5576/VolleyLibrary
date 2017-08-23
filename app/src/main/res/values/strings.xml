@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VolleyLibrary</string>
+    <string name="please_wait">Please wait.</string>
+    <string name="url_main">https://randomuser.me/api/</string>
+    <string name="timeout_error">Oops!!! Connection Timeout.</string>
+    <string name="internet_connection">Please check your internet connection.</string>
+</resources>
