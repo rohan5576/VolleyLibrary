@@ -11,12 +11,19 @@ By default all the volley network calls works asynchronously.
 # Volley offers the following benefits:
 
 --Automatic scheduling of network requests.
+
 --Multiple concurrent network connections.
+
 --Transparent disk and memory response caching with standard HTTP cache coherence.
+
 --Support for request prioritization.
+
 --Cancellation request API. You can cancel a single request, or you can set blocks or scopes of requests to cancel.
+
 --Ease of customization, for example, for retry and backoff.
+
 --Strong ordering that makes it easy to correctly populate your UI with data fetched asynchronously from the network.
+
 --Debugging and tracing tools.
 
 
@@ -35,9 +42,13 @@ By default all the volley network calls works asynchronously.
 Parameters passed into the constructor:
 
 --RequestMethod (GET, POST, PUT, DELETE, etc.)
+
 --URL: String of the URL of the required object
+
 --JSONObject: An optional object posted with the request, null if there is no object posted
+
 --ResponseListener: Response Listener, whose callback method will contain the response
+
 --ErrorListener: A Response.ErrorListener whose callback method will contain any problem with the request.
 
 
@@ -48,6 +59,14 @@ Remember to update your Manifest as well. ie. Add this class in your AndroidMani
 
 <application
         android:name=".AppController"/>
+        
+        
+        
+ # LruBitmapCache
+ 
+ A cache that holds strong references to a limited number of values. Each time a value is accessed, it is moved to the head of a queue. When a value is added to a full cache, the value at the end of that queue is evicted and may become eligible for garbage collection.
+ 
+ 
         
         
         
